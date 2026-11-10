@@ -9,6 +9,7 @@ The first public binary release of Markora for Windows x64. Arabic and English i
 - Grouped drawing tools, curved connectors, text, callouts, steps, selection, annotation eraser and editable projects.
 - Mini startup, configurable save folder, opt-in automatic saving and three recent captures.
 - Optional Gemini OCR with keys stored in Windows Credential Manager.
+- In-app update notifications on startup and in Settings, linking directly to the latest GitHub release page.
 
 ## Stability and performance work
 
@@ -24,12 +25,12 @@ The first public binary release of Markora for Windows x64. Arabic and English i
 
 ## Validation
 
-Production Windows build and installer packaging; 17 JavaScript unit tests; 8 Rust tests; warning-free release Clippy; native WebView2 editor/capture regression suites. Real capture tests cover region, window, full screen, all timed modes, minimized windows, clipboard copy, persistence and opt-in saving. Live Gemini OCR recognized an owned Arabic/English fixture.
+Production Windows build and installer packaging; 19 JavaScript unit tests; 13 Rust unit tests (plus 3 opt-in desktop tests); warning-free release Clippy; native WebView2 regression, Mini, editor, callout, OCR, region/full-screen capture, and update-notification smoke suites. See [QA validation](QA.md) for exact scope and observations.
 
 On the development PC, one idle-Mini sample showed JavaScript heap changing from 10.42 MiB to 6.49 MiB after lazy loading. Aggregate process memory changed only slightly; measurements depend on Windows, WebView2 and hardware. This is not a minimum-memory specification.
 
 ## Notes
 
-Requires Windows 10/11 x64 and WebView2. Binaries are unsigned. Gemini OCR requires internet, a valid user-supplied key and provider availability. Protected or restricted windows may refuse capture. This release does not include an automatic updater. Installer packaging was verified; an installation over an existing user installation was not performed during the audit.
+Requires Windows 10/11 x64 and WebView2. Binaries are unsigned. Gemini OCR requires internet, a valid user-supplied key and provider availability. Protected or restricted windows may refuse capture. Updates are checked via GitHub Releases and downloaded/installed manually by opening the release link; automatic silent binary replacement is not performed. Installer packaging was verified; an installation over an existing user installation was not performed during the audit.
 
 This release publishes binaries and documentation; Markora's application source remains private.

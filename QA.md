@@ -6,8 +6,8 @@ Tested on an interactive Windows desktop on 2026-11-10. These results describe t
 | --- | --- |
 | TypeScript, Vite and Windows release build | Passed |
 | NSIS x64 installer packaging | Passed; existing user installation was not overwritten for testing |
-| JavaScript unit tests | 17 passed |
-| Rust tests | 8 passed; 3 opt-in interactive tests excluded from this unit run |
+| JavaScript unit tests | 19 passed |
+| Rust tests | 13 passed; 3 opt-in interactive tests excluded from this unit run |
 | Release Clippy with warnings as errors | Passed |
 | Production npm dependency audit | No known advisories reported at audit time |
 | Five native editor window sizes | Header controls do not overlap; Home remains available |
@@ -28,6 +28,7 @@ Tested on an interactive Windows desktop on 2026-11-10. These results describe t
 | Region overlay memory | Captured image element cleared after selection |
 | Tray exit with unsaved annotation | Confirmation shown; document not silently discarded |
 | Gemini OCR | Real owned Arabic/English fixture recognized in about 2.4 s; existing Windows Credential Manager key used, never logged |
+| In-app update notifications | Live GitHub `check_for_updates` passed; Mini and Full startup banners, dismissal persistence, Settings manual check and error handling passed in Arabic RTL and English (newer-release responses simulated via IPC stub) |
 | Release screenshots | Actual native app, owned generated demonstration documents only |
 
 Annotation export/project tests intercept the native save-dialog transport and inspect its payload; they do not claim an automated test of clicking the Windows file dialog. Native capture, clipboard, window state and opt-in autosave use real commands.
@@ -47,4 +48,4 @@ The process tree includes WebView2 browser, renderer, GPU and utility processes.
 
 ## Remaining platform limits
 
-Protected windows may reject Windows Graphics Capture. OCR depends on a valid key, network, Google quotas and model availability. V1 has no automatic updater and its binaries are unsigned. Further hardware/DPI testing and user bug reports remain useful; do not publish API keys or private captures with reports.
+Protected windows may reject Windows Graphics Capture. Updates are checked via GitHub Releases and downloaded/installed manually via the release link (no silent binary replacement); binaries remain unsigned. On the post-update rebuild pass on 2026-11-10, full-screen, region, Mini, editor, callout, OCR and update smoke suites passed, while `CreateForWindow` in `smoke-capture` / `smoke-capture-controls` failed (`Failed to convert item to GraphicsCaptureItem`) on both the rebuilt binary and the earlier 1.0.0 binary in that desktop environment. Further hardware/DPI testing and user bug reports remain useful; do not publish API keys or private captures with reports.

@@ -33,6 +33,7 @@ Markora starts in **Mini mode**. Expand it for the full dashboard, or capture di
 - Editable `.markora` projects, the latest three captures, optional automatic saving and a configurable save folder.
 - Arabic/English interfaces, RTL layout, light/dark themes and reduced-motion support.
 - Optional Gemini OCR for Arabic and English, using your own API key stored in Windows Credential Manager.
+- In-app update notifications on startup and in Settings (configurable), linking directly to the latest GitHub release.
 
 | Default shortcut | Action |
 | --- | --- |
@@ -66,7 +67,7 @@ Actual Markora V1 windows with generated demonstration documents; no personal sc
 
 ## Privacy and license
 
-Capturing and editing are local. Gemini OCR sends the current edited image to Google only when you explicitly request extraction, and provider usage charges may apply. See [Privacy](PRIVACY.md).
+Capturing and editing are local. Gemini OCR sends the current edited image to Google only when you explicitly request extraction, and provider usage charges may apply. Optional update checks query GitHub for the latest release version only, without sending personal data. See [Privacy](PRIVACY.md).
 
 **Markora is proprietary software, not open source.** This repository contains documentation, screenshots and binary releases only. Application source code is not published here. See [License](LICENSE.txt), [Third-party notices](THIRD-PARTY-NOTICES.txt), [Release notes](RELEASE-NOTES.md) and [QA validation](QA.md).
 
