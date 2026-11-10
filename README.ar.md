@@ -1,0 +1,77 @@
+<div dir="rtl">
+
+<p align="center" dir="rtl">
+  <strong>عرض بالعربية</strong> &nbsp;|&nbsp; <a href="README.md" dir="ltr">Display in English</a>
+</p>
+
+<h1 dir="rtl"><span dir="ltr">Markora V1</span></h1>
+
+**التقط. علّق. واجعل كل فكرة أوضح.**
+
+برنامج لالتقاط الشاشة والتعليق على الصور في نظام <span dir="ltr">Windows</span>، بواجهتين عربية وإنكليزية، وشريط التقاط مصغّر (<span dir="ltr">Mini</span>)، ومظهرين زجاجيين فاتح وداكن.
+
+[تنزيل الإصدار V1](https://github.com/MhDTam/Markora-Releases/releases/tag/v1.0.0) · [أحدث إصدار](https://github.com/MhDTam/Markora-Releases/releases/latest) · [ملاحظات الإصدار](RELEASE-NOTES.md) · [الإبلاغ عن مشكلة](https://github.com/MhDTam/Markora-Releases/issues)
+
+![محرر Markora](images/editor.png)
+
+## التنزيل والتشغيل
+
+| الحزمة | الاستخدام |
+| --- | --- |
+| [النسخة المحمولة (<span dir="ltr">Portable ZIP</span>)](https://github.com/MhDTam/Markora-Releases/releases/download/v1.0.0/Markora-1.0.0-portable.zip) | فكّ ضغط الملف كاملًا، ثم شغّل <code dir="ltr">Markora.exe</code>. لا تتطلب تثبيتًا. |
+| [مثبّت <span dir="ltr">Windows</span>](https://github.com/MhDTam/Markora-Releases/releases/download/v1.0.0/Markora_1.0.0_x64-setup.exe) | يثبّت برنامج <span dir="ltr">Markora</span> لنظام <span dir="ltr">Windows x64</span> (بواجهتي تثبيت عربية وإنكليزية). |
+| [بصمات التحقق <span dir="ltr">SHA-256</span>](https://github.com/MhDTam/Markora-Releases/releases/download/v1.0.0/SHA256SUMS.txt) | للتحقق من سلامة الحزم المُنزّلة ومطابقتها. |
+
+يتطلب البرنامج نظام <span dir="ltr">Windows 10/11 x64</span> وبيئة تشغيل <span dir="ltr">Microsoft Edge WebView2 Runtime</span>. يستطيع المثبّت تنزيل <span dir="ltr">WebView2</span> عند الحاجة؛ لذلك قد يتطلب التثبيت لأول مرة اتصالًا بالإنترنت. حزم الإصدار <span dir="ltr">V1</span> غير موقّعة رقميًا.
+
+يبدأ <span dir="ltr">Markora</span> في **الوضع المصغّر (<span dir="ltr">Mini</span>)** للالتقاط السريع. يمكنك توسيعه لفتح لوحة التحكم الكاملة، أو بدء الالتقاط مباشرة ليفتح المحرر فورًا. عند استخدام مشغّل الإطلاق المرافق، أبقِ ملف <code dir="ltr">Markora Mini.exe</code> بجانب <code dir="ltr">Markora.exe</code>. النسخة المحمولة تعمل دون تثبيت، مع بقاء التفضيلات وآخر ثلاث لقطات محفوظة محليًا ضمن ملف مستخدم <span dir="ltr">Windows</span>.
+
+## الالتقاط والتحرير
+
+- **أوضاع الالتقاط والمؤقت:** التقاط منطقة محددة، أو نافذة مفتوحة (مع معاينة حية للنوافذ)، أو الشاشة كاملة؛ مع مؤقت زمني يتضمن محددًا مستقلًا لنوع الالتقاط وإمكانية تحديد مدة مخصصة بالثواني (من 1 إلى 60 ثانية).
+- **الدقة والتصدير والنسخ:** التقاط غير مضغوط بالدقة الأصلية للشاشة بصيغة <span dir="ltr">PNG</span>. يمكنك التصدير بصيغ <span dir="ltr">PNG</span> أو <span dir="ltr">JPEG</span> أو <span dir="ltr">WebP</span>، واختيار الجودة وحجم الإخراج، أو نسخ الصورة مباشرة إلى الحافظة دون حفظها.
+- **أدوات الرسم والتعليق:** أسهم وخطوط مستقيمة ومنحنية، أشكال هندسية (مستطيل، دائرة، مثلث، معيّن)، قلم حر، أداة تمييز (<span dir="ltr">Highlighter</span>)، نصوص قابلة للتعديل، تعليقات توضيحية (<span dir="ltr">Callouts</span>) بأنماط متعددة، خطوات مرقّمة، حجب معتم، قص الصورة، وممحاة التعليقات.
+- **التحديد والتحكم باللوحة:** تحديد بالسحب، تحريك العنصر كاملًا، تراجع وإعادة، وتكبير وتحريك اللوحة. استمر بالضغط على <kbd dir="ltr">Shift</kbd> لرسم أشكال متساوية الأضلاع، أو تقييد زوايا الخطوط، أو تغيير الحجم مع الحفاظ على التناسب.
+- **المشاريع والسجل والحفظ:** حفظ وفتح مشاريع <code dir="ltr">.markora</code> القابلة للتعديل، والاحتفاظ بآخر ثلاث لقطات، مع خيار الحفظ التلقائي ومجلد حفظ قابل للتخصيص، بالإضافة إلى خيار الإغلاق إلى شريط النظام (<span dir="ltr">System Tray</span>).
+- **اللغة والمظهر:** واجهتان عربية (<span dir="ltr">RTL</span>) وإنكليزية (<span dir="ltr">LTR</span>)، ومظهران فاتح وداكن، ودعم تقليل الحركة.
+- **استخراج النص عبر <span dir="ltr">Gemini OCR</span> (اختياري):** استخراج النصوص العربية والإنكليزية من الصور باستخدام مفتاح <span dir="ltr">API</span> الخاص بك والمحفوظ بأمان في مدير بيانات اعتماد <span dir="ltr">Windows</span>، مع زر لفحص الاتصال بالنموذج.
+
+| الاختصار الافتراضي | الوظيفة |
+| --- | --- |
+| <kbd dir="ltr">Ctrl+Shift+1</kbd> | التقاط منطقة |
+| <kbd dir="ltr">Ctrl+Shift+2</kbd> | التقاط نافذة |
+| <kbd dir="ltr">Ctrl+Shift+3</kbd> | التقاط الشاشة كاملة |
+| <kbd dir="ltr">Ctrl+Shift+4</kbd> | تكرار الالتقاط بالمؤقت |
+| <kbd dir="ltr">1–9, 0</kbd> | مجموعات أدوات المحرر (أثناء عدم الكتابة) |
+| الضغط المطوّل بزر الفأرة الأيمن | تحريك الصورة داخل المحرر |
+| <kbd dir="ltr">Ctrl+Enter</kbd> / <kbd dir="ltr">Escape</kbd> | تأكيد / إلغاء تعديل النص |
+
+انقر على أيقونة الساعة لاختيار مدة المؤقت ونوع الالتقاط، أو انقر عليها مرتين لتكرار آخر مؤقت. أزرار الالتقاط المباشر لا ترث تأخير المؤقت. تمسح الممحاة التعليقات فقط وتُبقي لقطة الشاشة الأصلية سليمة. كما يمكنك تخصيص اختصارات الالتقاط من الإعدادات.
+
+## لقطات من التطبيق
+
+نوافذ حقيقية من الإصدار الأول <span dir="ltr">Markora V1</span> باستخدام مستندات تجريبية مُولّدة؛ ولا تتضمن أي لقطات شخصية.
+
+**العربية · المظهر الداكن**
+
+![الواجهة الرئيسية بالعربية والمظهر الداكن](images/home-dark-ar.png)
+
+**الإنكليزية · المظهر الفاتح**
+
+![الواجهة الرئيسية بالإنكليزية والمظهر الفاتح](images/home-light-en.png)
+
+**الوضع المصغّر (<span dir="ltr">Mini</span>) والمؤقت المدمج**
+
+![شريط الالتقاط المصغر](images/mini.png)
+
+![مؤقت الالتقاط المصغر](images/mini-timer.png)
+
+## الخصوصية والترخيص
+
+يتم الالتقاط والتحرير محليًا على جهازك. يرسل خيار استخراج النص عبر <span dir="ltr">Gemini OCR</span> الصورة المعدّلة الحالية إلى <span dir="ltr">Google</span> فقط عندما تطلب الاستخراج صراحةً، وقد تنطبق رسوم استخدام وفق حسابك. راجع [ملف الخصوصية](PRIVACY.md).
+
+**برنامج <span dir="ltr">Markora</span> مملوك (<span dir="ltr">Proprietary</span>) وليس مفتوح المصدر.** يحتوي هذا المستودع على التوثيق ولقطات الشاشة والإصدارات التنفيذية فقط، ولا يُنشر الكود المصدري للتطبيق هنا. راجع [الترخيص](LICENSE.txt) و[إشعارات الطرف الثالث](THIRD-PARTY-NOTICES.txt) و[ملاحظات الإصدار](RELEASE-NOTES.md) و[تقرير التحقق <span dir="ltr">QA</span>](QA.md).
+
+عند الإبلاغ عن مشكلة، يُرجى تضمين رقم إصدار <span dir="ltr">Markora</span>، وإصدار <span dir="ltr">Windows</span>، ونسبة تكبير الشاشة (<span dir="ltr">Display scaling</span>)، وخطوات إعادة المشكلة. لا تنشر مفاتيح <span dir="ltr">API</span> أو لقطات شاشة خاصة.
+
+</div>

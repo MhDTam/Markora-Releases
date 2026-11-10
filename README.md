@@ -1,10 +1,14 @@
+<p align="center">
+  <strong>Display in English</strong> &nbsp;|&nbsp; <a href="README.ar.md" dir="rtl">عرض بالعربية</a>
+</p>
+
 # Markora V1
 
 **Capture. Annotate. Make it clear.**
 
 A Windows screenshot and annotation app with Arabic and English interfaces, a compact Mini capture bar, and light and dark glass themes.
 
-[Download V1](https://github.com/MhDTam/Markora-Releases/releases/tag/v1.0.0) · [Latest release](https://github.com/MhDTam/Markora-Releases/releases/latest) · [Report an issue](https://github.com/MhDTam/Markora-Releases/issues)
+[Download V1](https://github.com/MhDTam/Markora-Releases/releases/tag/v1.0.0) · [Latest release](https://github.com/MhDTam/Markora-Releases/releases/latest) · [Release notes](RELEASE-NOTES.md) · [Report an issue](https://github.com/MhDTam/Markora-Releases/issues)
 
 ![Markora editor](images/editor.png)
 
@@ -60,16 +64,10 @@ Actual Markora V1 windows with generated demonstration documents; no personal sc
 
 ![Mini capture timer](images/mini-timer.png)
 
-## العربية
-
-Markora برنامج لالتقاط الشاشة والتعليق على الصور في Windows، بواجهة عربية وإنكليزية وثيمين فاتح وداكن. يبدأ بوضع Mini؛ اختر طريقة الالتقاط لتنتقل إلى المحرر مباشرة. يمكنك نسخ الصورة دون حفظها، والحفظ التلقائي اختياري من الإعدادات.
-
-نزّل النسخة المحمولة وفك الضغط ثم شغّل `Markora.exe`، أو استخدم ملف التثبيت. يمكن تخصيص مدة المؤقت ونوع الالتقاط من زر الساعة. استخراج النص عبر Gemini اختياري ويتطلب مفتاح API واتصالًا بالإنترنت.
-
 ## Privacy and license
 
 Capturing and editing are local. Gemini OCR sends the current edited image to Google only when you explicitly request extraction, and provider usage charges may apply. See [Privacy](PRIVACY.md).
 
-**Markora is proprietary software, not open source.** This repository contains documentation, screenshots and binary releases only. Application source code is not published here. See [License](LICENSE.txt) and [Third-party notices](THIRD-PARTY-NOTICES.txt).
+**Markora is proprietary software, not open source.** This repository contains documentation, screenshots and binary releases only. Application source code is not published here. See [License](LICENSE.txt), [Third-party notices](THIRD-PARTY-NOTICES.txt), [Release notes](RELEASE-NOTES.md) and [QA validation](QA.md).
 
 For an issue, include the Markora version, Windows version, display scaling and steps to reproduce. Do not post API keys or private screenshots.
