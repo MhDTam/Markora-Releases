@@ -1,0 +1,9 @@
+Markora — Proprietary Software
+Copyright (c) 2026 MhDTam. All rights reserved.
+
+Permission is granted to download and use official Markora binary releases.
+Markora is not open source. No license to its proprietary source code is granted.
+Modification or redistribution of Markora requires the copyright holder's permission.
+
+Third-party components retain their own licenses; see THIRD-PARTY-NOTICES.txt.
+The software is provided as is, without warranties of any kind.
